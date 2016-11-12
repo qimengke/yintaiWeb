@@ -1,0 +1,291 @@
+#main{
+	background: #eee;
+}
+.content{
+	width:980px;
+	height:696px;
+	margin:0 auto;
+	background: #fff;
+}
+.contentHead{
+	width:980px;
+	height:20px;
+	padding: 9px 0px;
+	background: #eee;
+}
+.contentHead span{
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+}
+.contentHead span.index a{
+	color:#666;
+}
+
+.contentMain{
+	width:980px;
+	height:638px;
+	background: #fff;
+	margin:0 auto;
+	padding: ;
+}
+.contentFoot{
+	width:980px;
+	height:20px;
+	background: #eee;
+	margin:0 auto;
+}
+/*左侧列表*/
+.orderLeft{
+	width:189px;
+	height:618px;
+	padding: 20px 0px 0px 15px;
+	float: left;
+}
+.orderLeft .my{
+	display: block;
+	width:180px;
+	height:79px;
+	background: url(../img/user_core_01.png) no-repeat;
+	margin-bottom: 15px;
+}
+
+.myIndex{
+	width:180px;
+	height:35px;
+	margin-bottom: 8px;
+	background: url(../img/user_core_01.png) no-repeat 0px -80px;
+}
+.orderLeft h3{
+	float: left;
+	height: 21px;
+	line-height: 21px;
+	padding-left: 34px;
+	margin-top: 8px;
+	font-size: 14px;
+	background: url(../img/left1.png) no-repeat;
+	font-weight: 100;
+}
+.orderLeft h3 a{
+	color: #fff;
+}
+.orderLeft span{
+	/*float: right;*/
+	position: absolute;
+	right:10px;
+	top:0;
+	width: 32px;
+	height: 25px;
+	overflow: hidden;
+	text-indent: -999px;
+	cursor: pointer;
+	
+}
+.orderLeft .open{
+	background: url(../img/left1.png) no-repeat;
+	background-position: 8px -263px;
+	display: inline-block;
+	/*display: none;*/
+}
+.orderLeft .off{
+	background: url(../img/left1.png) no-repeat;
+	background-position: 8px -289px;
+	display: inline-block;
+	display: none;
+}
+.myIndex .myIndexList{
+	background-position: 12px 4px;
+}
+.myIndex div.active .myIndexList{
+	background-position: 12px -20px;
+}
+.order{
+	width:180px;
+	margin-bottom: 8px;
+	
+}
+.order .orderCenterBox{
+	width:180px;
+	height:35px;
+	position: relative;
+	background: url(../img/user_core_01.png) no-repeat 0px -80px;
+}
+.order div.active{
+	background-position: 0px -115px;
+}
+
+
+.order .orderListBox{
+	width:141px;
+	/*height:58px;*/
+	padding-left:37px;
+	position: relative;
+	background: #eee;
+	display: none;
+	border: 1px solid #ccc;
+}
+.order .orderList{
+	position: relative;
+	z-index: 9999;
+}
+.order .orderList li{
+	height:29px;
+	line-height: 29px;
+}
+.order .orderList li a{
+	color:#666;
+	font-size: 12px;
+	font-weight: 700;
+}
+.order .orderList li a:hover{
+	color:#E50048;
+}
+
+.order .orderCenter{
+	background-position: 12px -44px;
+}
+.order div.active .orderCenter{
+	background-position: 12px -68px;
+}
+
+.orderLeft .account{
+	background-position: 12px -89px;
+}
+.orderLeft div.active .account{
+	background-position: 12px -110px;
+}
+.orderLeft .news{
+	background-position: 12px -129px;
+}
+.orderLeft div.active .news{
+	background-position: 12px -149px;
+}
+
+.orderLeft .favorites{
+	background-position: 12px -171px;
+}
+.orderLeft div.active .favorites{
+	background-position: 12px -193px;
+}
+
+.orderLeft .data{
+	background-position: 12px -216px;
+}
+.orderLeft div.active .data{
+	background-position: 12px -239px;
+}
+.orderLeft .card{
+	background: url(../img/user-card-00.png) no-repeat;
+	background-position: 12px 6px;
+}
+.orderLeft div.active .card{
+	background-position: 12px -13px;
+}
+.orderLeft .myVip{
+	background-position: 12px -434px;
+}
+/*右侧*/
+.orderRight{
+	width:750px;
+	height:469px;
+	float: left;
+	margin-left: 17px;
+	margin-top: 20px;
+}
+
+.orderRightTop{
+	width:750px;
+	height:24px;
+	margin:15px 0px;
+}
+.orderRightTop h1{
+	background: url(../img/user-orderIcon.gif) no-repeat;
+	background-position: -34px -20px;
+	padding-left: 25px;
+	font-size: 16px;
+	color: #333;
+	float: left;
+}
+.orderRightTop span{
+	background: url(../img/user-orderIcon.gif) no-repeat;
+	background-position: 8px -42px;
+	padding-left: 22px;
+	width: 22px;
+	height:21px;
+	display: inline-block;
+}
+.orderRightMain{
+	width:750px;
+	height:400px;
+	
+}
+/*订单列表*/
+.orderRightMainTitle{
+	width:750px;
+	height:36px;
+	background: #666;
+}
+.orderRightMainTitle h3{
+	width:80px;
+	height:36px;
+	padding-left:10px;
+	line-height: 36px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: 700;
+	float: left;
+}
+.orderRightMainTitle .select{
+	float: right;
+	width:98px;
+	height:26px;
+	padding-right: 10px;
+}
+.orderRightMainTitle .select .selectList{
+	margin-top:7px;
+}
+
+.orderRMBottom{
+	width:748px;
+	height:363px;
+	border: 1px solid #e2e2e2;
+}
+.orderRMBottom .transaction{
+	width:708px;
+	height:48px;
+	padding:0px 20px;
+	background:#FFFEEC;
+	line-height: 48px;
+	font-size: 12px;
+}
+.orderRMBottom .transaction a{
+	color: #d50f53;
+	margin-right: 15px;
+	text-decoration: underline;
+}
+.orderRMCont{
+	width:748px;
+	height:314px;
+	background: url(../img/user-noOrderBg.gif) repeat-x;
+}
+.orderRMCont .nothing{
+	width:748px;
+	height:210px;
+	padding-top:104px;
+}
+.orderRMCont .nothing .nothingMain{
+	width:257px;
+	height:100px;
+	padding-left: 70px;
+	margin-left:200px;
+	line-height: 25px;
+	background: url(../img/user_core_01.png) no-repeat 0px -150px;
+}
+.orderRMCont .nothing .nothingMain p{
+	font-size: 12px;
+	color: #666;
+}
+.orderRMCont .nothing .nothingMain p a{
+	color: #E5004F;
+	text-decoration: underline;
+}

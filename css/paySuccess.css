@@ -1,0 +1,117 @@
+.shopCarBox{
+	width:980px;
+	min-height: 500px;
+	background: #eee;
+	height: auto!important;
+	height: 500px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.shopCarBox:after{
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.shopCont{
+	width:940px;
+	height:420px;
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 20px;
+}
+.shopHead{
+	width:940px;
+	height:90px;
+}
+.shopHead h3{
+	width:120px;
+	height:90px;
+	float: left;
+	background: url(../img/shopping-head.jpg) no-repeat;
+}
+.shopStep{
+	width:545px;
+	height:90px;
+	float: right;
+}
+.shopStep .evryStep{
+	width:545px;
+	height:25px;
+}
+.shopStep .evryStep span{
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	height:25px;
+	/*line-height: 25px;*/
+}
+.shopStep .evryStep span.active{
+	color: #E50048;
+}
+.shopStep .evryStep .evryStepBg{
+	width:30px;
+	height:25px;
+	margin-left:60px;
+	margin-right: 60px;
+	/*background: url(../img/shop2.png) no-repeat;*/
+}
+.shopStep .shopBg{
+	width:545px;
+	height:65px;
+	background: url(../img/shop6.png) no-repeat;
+}
+
+.shopPay{
+	width:940px;
+	height:350px;
+	margin: 0 auto;
+}
+.shopPayBox{
+	width:450px;
+	padding-left: 50px;
+	height:300px;
+	margin:30px 200px 0px;
+}
+
+.success{
+	width:70px;
+	height:49px;
+	float: left;
+	background: url(../img/f41.png) no-repeat;
+}
+.successRight{
+	width:200px;
+	height:60px;
+	float: left;
+}
+.OK{
+	width：200px;
+	height:30px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #E50048;
+}
+
+.tips{
+	width:200px;
+	height:30px;
+}
+.goToIndex{
+	font-size: 12px;
+	color: #666;
+	float: left;
+	margin-right:20px;
+}
+.goToIndex .nums{
+	color: #E50048;
+}
+.continu{
+	display: inline-block;
+	float: left;
+	color: #E50048;
+	font-size: 12px;
+}

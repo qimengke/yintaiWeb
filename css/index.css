@@ -1,0 +1,708 @@
+/*展开菜单*/
+.headerNav .menu{
+	display: block;
+	z-index: 999;
+}
+
+/*轮播图开始*/
+#banner{
+	width:100%;
+	height:470px;
+}
+#banner .bannerbg{
+	width:100%;
+	height:470px;
+	position: relative;
+	/*background: url(../img/banner01.jpg) no-repeat 50%;*/
+}
+.bannerbg .bannerMain{
+	width: 1190px;
+	height: 470px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.bannerbg .bannerMain .bannerList{
+	position: relative;
+	width:100%;
+	height:100%;
+	z-index: 100;
+}
+.bannerList li{
+	position: absolute;
+	width: 100%;
+}
+.bannerList li a.bannerImg{
+	display: block;
+}
+.bannerList li a.bannerImg img{
+	width:100%;
+	height:470px;
+}
+
+.bannerbg .bannerMain .bannerNav{
+	position: absolute;
+	z-index: 999;
+	bottom:20px;
+	left:512px;
+}
+.bannerbg .bannerMain .bannerNav li{
+	float:left;
+	width: 30px;
+	height:8px;
+	background: #211616;
+	margin-right: 1px;
+	cursor: pointer;
+}
+.bannerbg .bannerMain .bannerNav .active{
+	background: #E5004F;
+}
+
+/*左右箭头开始*/
+.bannerbg .bannerMain a.controlBtn{
+	position: absolute;
+	display: block;
+	width:30px;
+	height:60px;
+	background: url(../img/prevnext.png) no-repeat;
+	z-index: 9999;
+	display: none;
+	cursor: pointer;
+}
+.bannerbg .bannerMain a.prevBtn{
+	left:220px;
+	top:205px;
+}
+.bannerbg .bannerMain a.prevBtn:hover{
+	background: url(../img/prevnext.png) no-repeat 0px -60px;
+}
+.bannerbg .bannerMain a.nextBtn{
+	right:212px;
+	top:205px;
+	background: url(../img/prevnext.png) no-repeat -30px 0px;
+}
+.bannerbg .bannerMain a.nextBtn:hover{
+	background: url(../img/prevnext.png) no-repeat -30px -60px;
+}
+
+.bannerbg .bannerMain .bannerRight{
+	position: absolute;
+	right:0px;
+	top:0px;
+	z-index: 10000;
+}
+/*左右箭头结束*/
+#content{
+	width: 100%;
+	min-height: 400px;
+	height: auto!important;
+	height: 400px;	
+}
+#content:after{
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+/*热卖商品推荐开始*/
+.hotGoods{
+	width:1190px;
+	height:330px;
+	margin-top:30px;
+	margin:0 auto;
+	margin-top: 20px;
+}
+.hotGoods .hotGoodsLeft{
+	width:910px;
+	height:330px;
+	float: left;
+}
+.hotGoods .hotGoodsLeft .hotGoodsNav{
+	width:910px;
+	height:50px;	
+}
+.hotGoods .hotGoodsLeft .hotGoodsNav li{
+	float: left;
+	width:303px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 15px;
+	border-bottom: 5px solid #333333;
+}
+.hotGoods .hotGoodsLeft .hotGoodsNav li.active{
+	border-bottom: 5px solid #E5004F;
+	font-weight: 900;
+}
+
+.hotGoods .hotGoodsLeft .hotGoodsList{
+	width:910px;
+	height:270px;
+	margin-top: 9px;
+}
+.hotGoods .hotGoodsLeft .hotGoodsList .hotGoodsListL{
+	width:910px;
+	height:260px;
+}
+.hotGoods .hotGoodsLeft .hotGoodsList .hotGoodsListL li{
+	float: left;
+	margin-right:5px;
+	border:1px solid #B2B2B2;
+	position: relative;
+	width:220px;
+	height:260px;
+}
+.hotGoods .hotGoodsLeft .hotGoodsList .hotGoodsListL1{
+	display: none;
+}
+.hotGoods .hotGoodsLeft .hotGoodsList .hotGoodsListL3{
+	display: none;
+}
+
+.hotGoods .hotGoodsLeft .hotGoodsList .hotGoodsListL .hotLast{
+	margin-right:0px;
+}
+
+/*产生线，然后运动开始*/
+.borderlines li {
+	position: relative;
+}
+.borderlines li a{
+	position: absolute;
+	display: block;
+	top:0px;left:0px;right:0px;bootom:0px;
+}
+.borderlines li a img{
+	display: block;
+	width: 218px;
+	height:260px;
+}
+.borderlines li .borderTop{
+	position: absolute;
+	width: 220px;
+	height:1px;
+	top:0;
+	left:0;
+	background-color: #000;
+	transition: all 1s;
+	transform: scale(0);
+	transform-origin: top left;
+}
+.borderlines li:hover .borderTop{
+	transform: scale(1);
+}
+.borderlines li .borderRight{
+	position: absolute;
+	width: 1px;
+	height:260px;
+	top:0;
+	right:0;
+	background-color: #000;
+	transition: all 1s;
+	transform: scale(0);
+	transform-origin: bottom right;
+}
+.borderlines li:hover .borderRight{
+	transform: scale(1);
+}
+
+.borderlines li .borderBottom{
+	position: absolute;
+	width: 220px;
+	height:1px;
+	bottom:0;
+	right:0;
+	background-color: #000;
+	transition: all 1s;
+	transform: scale(0);
+	transform-origin: bottom right;
+}
+.borderlines li:hover .borderBottom{
+	transform: scale(1);
+}
+
+.borderlines li .borderLeft{
+	position: absolute;
+	width: 1px;
+	height:260px;
+	left:0;
+	top:0;
+	background-color: #000;
+	transition: all 1s;
+	transform: scale(0);
+	transform-origin: top left;
+}
+.borderlines li:hover .borderLeft{
+	transform: scale(1);
+}
+/*产生线，结束*/
+
+.hotGoods .hotGoodsRight{
+	width:270px;
+	height:300px;
+	float:right;
+	margin-top: 24px;
+}
+/*热卖商品推荐结束*/
+
+/*广告图片开始*/
+.adert{
+	width:1190px;
+	height:80px;
+	margin: 10px auto;
+	margin-bottom: 20px;
+}
+/*广告图片结束*/
+
+/*银泰百货开始*/
+.general{
+	width: 1190px;
+	margin: 0 auto;
+}
+.general h1{
+	height:36px;
+	background: url(../img/4.png) no-repeat;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.generalContair{
+	height:560px;
+	border: 1px solid #EEEEEE;
+	padding:10px;
+}
+/*银泰百货左边*/
+.generalContair .generalLeft{
+	width:340px;
+	height:555px;
+	margin-right:10px;
+	float:left;
+}
+/*银泰百货右边*/
+.generalContair .generalRight{
+	width:815px;
+	height:555px;
+	float: left;
+}
+/*银泰百货上边*/
+.generalContair .generalRight .generalRightTop{
+	width:100%;
+	height:38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 12px;
+	background: url(../img/bg.png) repeat-x;
+	
+}
+.generalContair .generalRight .generalRightTop li{
+	float: left;
+	width: 102px;
+	height: 35px;
+}
+.generalContair .generalRight .generalRightTop li.active{
+	font-weight: 900px;
+	border-bottom:3px solid #E70050;
+}
+
+
+/*银泰右边百货下面*/
+.generalContair .generalRight .generalList{
+	width:100%;
+	height:517px;
+}
+.generalContair .generalRight .generalList li{
+	float: left;
+	margin:4px 4px 0px 0px;
+	position: relative;
+}
+.generalContair .generalRight .generalList li.notMargin{
+	margin-right:0px;
+}
+.generalContair .generalRight .generalList li a{
+	display: block;
+	
+}
+/*遮罩层*/
+.generalContair .generalRight .generalList li .shade{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left:0;
+	top:0;
+	background: #ccc;
+	opacity:0.3;
+	display: none;
+}
+
+
+.generalContair .generalRight .generalList2{
+	width: 100%;
+	height:517px;
+	display: none;
+}
+.generalContair .generalRight .generalList2 li{
+	border: 1px solid #CCCCCC;
+	height:254px;
+	width:200px;
+	position: relative;
+	margin: 1px;
+}
+.generalContair .generalRight .generalList2 a{
+	display: block;
+	margin-left: 20px;
+	width: 150px;
+	height:200px;
+	background: red;
+}
+.generalContair .generalRight .generalList2 .goodsInfo{
+	width:194px;
+	height:48px;
+	padding:3px;
+	background: #EEEEEE;
+	line-height: 25px;
+}
+.generalContair .generalRight .generalList2 .goodsInfo p{
+	font-size: 12px;
+	text-decoration: underline;
+	color: #323333;
+	overflow: hidden;
+}
+
+.generalContair .generalRight .generalList2 .goodsInfo .price{
+	font-size: 14px;
+	color: #E50048;
+}
+.generalContair .generalRight .generalList2 .goodsInfo .referencePrice{
+	font-size: 14px;
+	color: #888888;
+	text-decoration: line-through;
+	position: absolute;
+	right:4px;
+}
+/*银泰百货结束*/
+
+/*楼层指引开始*/
+.stairs{
+	width:1190px;
+	margin: 0 auto;
+	position: relative;
+}
+.stairsList{
+	width:100%;
+}
+
+.stairsList>li{
+	width:100%;
+	height:430px;
+	margin-top: 30px;
+	
+	
+}
+.stairsList li h2{
+	width:100%;
+	height:37px;
+	margin:10px 0px;
+}
+.stairsList li .stairsCont{
+	width:100%;
+	height:370px;
+}
+
+/*楼梯左边*/
+.stairsList li .stairsCont .stairsContLeft{
+	width: 228px;
+	height:370px;
+	border: 1px solid #ccc;
+	float: left;
+}
+
+.stairsList li .stairsCont .stairsContLeft .stairsContLeftList{
+	width: 218px;
+	height:143px;
+	margin:15px 0px 30px 10px;
+}
+.stairsList li .stairsCont .stairsContLeft .stairsContLeftList li{
+	width: 65px;
+	height: 32px;
+	float: left;
+	margin-right:5px;
+	margin-bottom: 5px;
+	/*outline: 1px solid #ccc;
+	margin-right:5px;
+	margin-bottom: 5px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 12px;*/
+	
+}
+
+.stairsList li .stairsCont .stairsContLeft .stairsContLeftList li:hover{
+	background: #E50048;
+	
+}
+
+.stairsList li .stairsCont .stairsContLeft .stairsContLeftList li a{
+	width: 65px;
+	height: 32px;
+	display: block;
+	color:#666666;
+	outline: 1px solid #ccc;
+	
+	text-align: center;
+	line-height: 32px;
+	font-size: 12px;
+}
+.stairsList li .stairsCont .stairsContLeft .stairsContLeftList li a:hover{
+	outline: 0px;
+	color: #fff;
+}
+
+/*左下角轮播图*/
+.stairsLeftBanner{
+	width: 185px;
+	height: 125px;
+	background: url(../img/bannerbg.png) repeat-x;
+	position: relative;
+	margin:50px auto;
+	padding-top:15px;
+	padding-left:15px;
+	
+	}
+	.bannerBox {
+		width: 170px;
+		height: 110px;
+		position: relative;
+		overflow: hidden;
+	}
+	.bannerBox .bannerList2 {
+		width: 170px;
+		height: 110px;
+		position: absolute;
+	}
+	.bannerBox .bannerList2 img {
+		display: block;
+		float: left;
+		width: 75px;
+		height: 50px;
+		margin: 0px 5px 5px;
+	}
+	.bannerBox .bannerList2 img {
+		display: block;
+		width: 75px;
+		height: 50px;
+		/*margin:0px 5px 5px;*/
+	}
+	.stairsLeftBanner .controlBtn2 {
+		position: relative;
+		display: block;
+		width: 7px;
+		height: 11px;
+		cursor: pointer;
+		background: url(../img/yt_ico_1.png) no-repeat;
+	}
+	.stairsLeftBanner .prevBtn2 {
+		left: -10px;
+		top: -60px;
+		background: url(../img/yt_ico_1.png) no-repeat -3px -5px;
+	}
+	.stairsLeftBanner .prevBtn2:hover {
+		background: url(../img/yt_ico_1.png) no-repeat -18px -5px;
+	}
+	.stairsLeftBanner .nextBtn2 {
+		left: 175px;
+		top: -70px;
+		background: url(../img/yt_ico_1.png) no-repeat -32px -5px;
+	}
+	.stairsLeftBanner .nextBtn2:hover {
+		background: url(../img/yt_ico_1.png) no-repeat -48px -5px;
+	}
+	
+	.bottom{
+		width:1190px;
+		height:170px;
+		border: 1px solid #ccc;
+		margin-bottom:50px;
+	}
+	.bottom .bottomImg{
+		float:left;
+		border-right:1px solid #ccc;
+		position: relative;
+	}
+	.bottom .bottomImg .bottomShade{
+		width:390px;
+		height:170px;
+		position: absolute;
+		left:0;
+		top:0;
+		background: #ccc;
+		opacity:0.3;
+		display: none;
+		
+	}
+
+/*楼梯中间导航*/
+.stairsList>li .stairsCont .stairsContBanner{
+	width: 390px;
+	height:370px;
+	float: left;
+}
+
+.stairsContBanner{
+	width: 385px;
+	height:370px;
+	margin-left: 5px;
+	position: relative;
+
+}
+.stairsContBanner img{
+	width:100%;
+	height:370px;
+}
+.stairsContBanner .bannerList1 {
+	position: relative;
+	width: 390px;
+	height: 370px;
+	overflow: hidden;
+	/*z-index: 100;*/
+}
+.bannerList1 li {
+	position: absolute;
+	width：390px;
+	height: 370px;
+}
+.bannerList1 li .bannerImg {
+	display: block;
+	width: 390px;
+	height: 370px;
+}
+.bannerList1 li .bannerImg img {
+	width: 390px;
+	height: 370px;
+	display: block;
+}
+.stairsContBanner .bannerNav1 {
+	position: absolute;
+	z-index: 999;
+	bottom: 20px;
+	left: 180px;
+}
+.stairsContBanner .bannerNav1 li {
+	float: left;
+	width: 10px;
+	height: 10px;
+	background: #211616;
+	border-radius: 15px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.stairsContBanner .bannerNav1 .active {
+	background: #E5004F;
+}
+
+/*左右箭头开始*/
+.stairsContBanner a.controlBtn1 {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 60px;
+	background:url(../img/prevnext.png) no-repeat;
+	z-index: 9999;
+	display: none;
+	cursor: pointer;
+}
+.stairsContBanner a.prevBtn1 {
+	left: 0;
+	top: 180px;
+}
+.stairsContBanner a.prevBtn1:hover {
+	background: url(../img/prevnext.png) no-repeat 0px -60px;
+}
+.stairsContBanner a.nextBtn1 {
+	right: 0;
+	top: 180px;
+	background:url(../img/prevnext.png) no-repeat -30px 0px;
+}
+.stairsContBanner a.nextBtn1:hover {
+	background: url(../img/prevnext.png) no-repeat -30px -60px;
+}
+
+/*楼梯右边*/
+.stairsList>li .stairsCont .stairsContRight{
+	width: 554px;
+	height:366px;
+	float: left;
+}
+
+.stairsList>li .stairsCont .stairsContRight li{
+	width:270px;
+	height:180px;
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+}
+/*.stairsList>li .stairsCont .stairsContRight li.first,.stairsList>li .stairsCont .stairsContRight li.second{
+	margin-bottom:5px;
+}*/
+.stairsList>li .stairsHead1{
+	background: url(../img/2.png) no-repeat;
+}
+.stairsList>li .stairsHead2{
+	background: url(../img/2.png) no-repeat 0px -45px;
+}
+.stairsList>li .stairsHead3{
+	background: url(../img/2.png) no-repeat 0px -91px;
+}
+.stairsList>li .stairsHead4{
+	background: url(../img/2.png) no-repeat 0px -137px;
+}
+.stairsList li .stairsHead5{
+	background: url(../img/2.png) no-repeat 0px -184px;
+}
+.stairsList>li .stairsHead6{
+	background: url(../img/2.png) no-repeat 0px -229px;
+}
+.stairsList>li .stairsHead7{
+	background: url(../img/2.png) no-repeat 0px -275px;
+}
+.stairsList>li .stairsHead8{
+	background: url(../img/2.png) no-repeat 0px -322px;
+}
+.stairsList>li .stairsHead9{
+	background: url(../img/2.png) no-repeat 0px -367px;
+}
+
+.floor{
+	width:50px;
+	height: 545px;
+	background: url(../img/floor_nav.png) no-repeat;
+	position: fixed;
+	right:50px;
+	bottom: 30px;
+	display: none;
+}
+.floor li{
+	width:50px;
+	height:50px;
+	cursor: pointer;
+	margin-bottom: 5px;
+	/*display: none;*/
+}
+.floor li.active{
+	background:#E5004F;
+}
+.floor span{
+	/*text-align: center;*/
+	display: block;
+	width:30px;
+	height:40px;
+	color:#fff;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	display: none;
+}
+/*楼层指引结束*/

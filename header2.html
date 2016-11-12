@@ -1,0 +1,91 @@
+<div class="header">
+	<div class="headerTop">
+		<div class="headerTopCont">
+			<ul class="headerTopContLeft">
+				<li class="headerTopContLeftFirst"><a href="index.html">银泰首页</a></li>
+				<li class="lines">|</li>
+				<li class="headerTopContLeftSecond"><a href="">微信<span class="selectSign"></span></a>
+					<img src="img/weixin.png"/>
+				</li>
+				<li class="lines">|</li>
+				<li class="headerTopContLeftThird"><a href="">手机银泰<span class="selectSign"></span></a>
+					<img src="img/app.png"/>
+				</li>
+			</ul>
+			<div class="headerTopContRight">
+				<p>Hi,欢迎来到银泰网!</p>
+				<ul class="headerTCRList">
+					<li class="headerTCRListLoad"><a href="login.html">登录</a><a class="headerTCRListRe" href="register.html">注册</a></li>
+					<li class="lines">|</li>
+					<li><a href="myOrder.html">我的订单</a></li>
+					<li class="lines">|</li>
+					<li><a href="">我的银泰<span class="selectSign"></span></a>
+						<ul class="myList">
+							<li><a href="myCollect.html">我的收藏</a></li>
+							<li><a href="">我的余额</a></li>
+							<li><a href="">我的银元</a></li>
+							<li><a href="">我的银泰卡</a></li>
+							<li><a href="">我的优惠券</a></li>
+							<li><a href="">我的积分</a></li>
+							<li><a href="">我的贵宾卡</a></li>
+						</ul>
+					</li>
+					<li class="lines">|</li>
+					<li><a href="">银泰卡</a></li>
+					<li class="lines">|</li>
+					<li><a href="">帮助中心</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="headerSearch">
+		<div class="headerSearchWrap">
+			<div class="logo">
+				<a href="index.html" class="logoLeft"></a>
+				<a href="" class="logoRight"></a>
+				
+			</div>			
+		</div>
+	</div>
+	
+</div>
+<!--/*js代码开始*/-->
+<script type="text/javascript">
+	//手机微信滑过
+	$(".headerTopContLeftSecond").hover(function(){
+		//console.log("进入");
+		$(this).css({"border-color":"#ccc","background":"#fff"});
+		$(this).find("img").show();
+		
+	},function(){
+		//console.log("出去");
+		$(this).find("img").hide();
+		$(this).css({"background":"#eee","border-color":"transparent"});
+	});
+	
+	//手机APP滑过
+	$(".headerTopContLeftThird").hover(function(){
+		//console.log("进入");
+		$(this).css({"border-color":"#ccc","background":"#fff"});
+		$(this).find("img").show();
+		
+	},function(){
+		//console.log("出去");
+		$(this).find("img").hide();
+		$(this).css({"border-color":"transparent","background":"#eee"});
+	});
+	
+	//我的银泰卡滑过
+	$(".headerTCRList li").eq(4).hover(function(){
+		//console.log("进入");
+		$(this).css({"border-color":"#ccc","background":"#fff"});
+		$(this).find(".myList").show();
+	},function(){
+		//console.log("出去");
+		$(this).css({"border-color":"transparent","background":"#eee"});
+		$(this).find(".myList").hide();
+	});
+	
+	
+</script>

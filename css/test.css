@@ -1,0 +1,71 @@
+.borderlines li {
+	position: relative;
+}
+.borderlines li a{
+	position: absolute;
+	display: block;
+	top:0px;left:0px;right:0px;bootom:0px;
+}
+.borderlines li a img{
+	display: block;
+	width: 218px;
+	height:258px;
+}
+.borderlines li .borderTop{
+	position: absolute;
+	width: 220px;
+	height:1px;
+	top:0;
+	left:0;
+	background-color: #f66;
+	transition: all 1s;
+	transform: scale(0);
+	transform-origin: top left;
+}
+.borderlines li:hover .borderTop{
+	transform: scale(1);
+}
+.borderlines li .borderRight{
+	position: absolute;
+	width: 1px;
+	height:260px;
+	top:0;
+	right:0;
+	background-color: #f66;
+	transition: all 1s;
+	transform: scale(0);
+	transform-origin: bottom right;
+}
+.borderlines li:hover .borderRight{
+	transform: scale(1);
+}
+
+.borderlines li .borderBottom{
+	position: absolute;
+	width: 220px;
+	height:1px;
+	bottom:0;
+	right:0;
+	background-color: #f66;
+	transition: all 1s;
+	transform: scale(0);
+	transform-origin: bottom right;
+}
+.borderlines li:hover .borderBottom{
+	transform: scale(1);
+}
+
+.borderlines li .borderLeft{
+	position: absolute;
+	width: 1px;
+	height:260px;
+	left:0;
+	top:0;
+	background-color: #f66;
+	transition: all 1s;
+	transform: scale(0);
+	transform-origin: top left;
+}
+.borderlines li:hover .borderLeft{
+	transform: scale(1);
+}

@@ -1,0 +1,367 @@
+.shopCarBox{
+	width:980px;
+	min-height: 500px;
+	background: #eee;
+	height: auto!important;
+	height: 500px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.shopCarBox:after{
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.shopCont{
+	width:940px;
+	height:420px;
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 20px;
+}
+.shopHead{
+	width:940px;
+	height:90px;
+}
+.shopHead h3{
+	width:120px;
+	height:90px;
+	float: left;
+	background: url(../img/shopping-head.jpg) no-repeat;
+}
+.shopStep{
+	width:545px;
+	height:90px;
+	float: right;
+}
+.shopStep .evryStep{
+	width:545px;
+	height:25px;
+}
+.shopStep .evryStep span{
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	height:25px;
+	/*line-height: 25px;*/
+}
+.shopStep .evryStep span.active{
+	color: #E50048;
+}
+.shopStep .evryStep .evryStepBg{
+	width:30px;
+	height:25px;
+	margin-left:60px;
+	margin-right: 60px;
+	/*background: url(../img/shop2.png) no-repeat;*/
+}
+.shopStep .shopBg{
+	width:545px;
+	height:65px;
+	background: url(../img/shop1.png) no-repeat;
+}
+
+/*主要商品信息*/
+.shopMain{
+	width:938px;
+	height:160px;
+	border:1px solid #ccc
+}
+.shopMainHead{
+	width:938px;
+	height:30px;
+	border: 0px;
+	background: #666;
+}
+.shopMainHead div{
+	float: left;
+	line-height: 30px;
+	text-align: left;
+	font-weight: 700;
+	overflow: hidden;
+	color: #fff;
+}
+.checkAll{
+	width: 103px;
+	padding-left: 27px;
+}
+.shopName{
+	width: 365px;
+}
+.shopPrice{
+	width:130px;
+	
+}
+.shopMainHead div.shopNums{
+	width: 66px;
+	padding-right: 60px;
+	text-align: center;
+}
+.shopAllPrice{
+	width: 90px;
+}
+.operate{
+	width: 92px;
+}
+
+.shopClass{
+	width:928px;
+	height:30px;
+	background: #eee;
+	padding-left:10px;
+	font-size: 12px;
+	color: #666;
+	line-height: 30px;
+}
+/*商品的详细信息*/
+.productInfo{
+	width:911px;
+	height:80px;
+	background: #F9F9F9;
+	padding-top: 20px;
+	padding-left: 27px;
+}
+.productInfo>div{
+	float: left;
+}
+.check{
+	width: 40px;
+	height: 62px;
+	line-height: 62px;
+	border-right: 1px solid #ccc;
+}
+.check input{
+	display: inline-block;
+}
+
+.productName{
+	width:425px;
+	height:80px;
+}
+
+.shopImg{
+	width:45px;
+	height:60px;
+	float: left;
+	margin-right:10px;
+	border:1px solid #ccc;
+}
+.proInfo{
+	width:320px;
+	height:80px;
+	float: left;
+	overflow: hidden;
+}
+.proName{
+	width:320px;
+	height:35px;
+	line-height: 17px;
+	font-size: 12px;
+	color: #666;
+	overflow: hidden;
+}
+.colorSize{
+	width:320px;
+	height:20px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #999;
+}
+.productColor{
+	width:80px;
+	height:20px;
+	float: left;
+}
+.productSize{
+	width:230px;
+	height:20px;
+	float: left;
+}
+
+.productPrice{
+	width:125px;
+	height:80px;
+	line-height: 70px;
+}
+.productNum{
+	width:120px;
+	height:80px;
+}
+.proNumber{
+	width:70px;
+	height:20px;
+	margin-top:20px;
+	margin-left: 10px;
+}
+.proNumber a,.proNumber input{
+	display: block;
+	float: left;
+}
+.proNumber a{
+	width:16px;
+	height:20px;
+	background: #eee;
+	text-align: center;
+	line-height: 20px;
+	color: #666666;
+	border: 1px solid #DFDFDF;
+	
+}
+.proNumber a:hover{
+	border-color: #E50048;
+}
+.proNumber input{
+	width:26px;
+	height:22px;
+	outline: none;
+	border: 0px;
+	/*background: #eee;*/
+	text-align: center;
+}
+/*总价*/
+.productAllPrice{
+	width:90px;
+	height:80px;
+	padding-left: 10px;
+	line-height: 70px;
+}
+.productOperate{
+	width:80px;
+	padding-top: 10px;
+}
+.productOperate a{
+	width:80px;
+	height:16px;
+	font-size: 12px;
+	color: #666;
+	padding-left:15px;
+}
+.productOperate a:hover{
+	color: #E50048;
+}
+.shopCollect{
+	background: url(../img/shopping-icon.png) no-repeat 0px -93px;
+}
+.shopDelect{
+	background: url(../img/shopping-icon.png) no-repeat 0px -127px;
+}
+
+.shopBuy{
+	width:913px;
+	height:149px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	padding-left: 25px;
+	background: #EEEEEE;
+}
+
+.shopBuyBottom{
+	width:890px;
+	height:69px;
+	padding-top: 10px;
+}
+.shopAllMoney{
+	width:210px;
+	height:37px;
+	float:right;
+	font-size: 16px;
+	color: #333;
+	line-height: 37px;
+}
+
+.shopAllMoney .noTransp{
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+}
+.shopAllMoney .money{
+	color: #E50048;
+	font-size: 14px;
+	font-weight: 700;
+	padding-left: 10px;
+	background: url(../img/user-orderIcon.gif) no-repeat 0px -76px;
+}
+.goBuy{
+	display: block;
+	float: right;
+	width:150px;
+	height:44px;
+	background: url(../img/gobuy.png) no-repeat;
+}
+
+.shopBuyTop{
+	width:890px;
+	height:70px;
+	border-bottom: 1px dashed #ccc;
+}
+/*全选删除按钮*/
+.shopBuyCheck{
+	width:890px;
+	height:20px;
+	padding-top: 20px;
+}
+.shopBuyCheck input,.shopBuyCheck a,.shopBuyCheck span{
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	color: #666;
+}
+.shopBuyCheck a.checkDelect{
+	margin:0px 15px;
+}
+/*免运费提醒*/
+.noTranspTips{
+	width:190px;
+	height:30px;
+	font-size: 14px;
+	color: #999;
+	float: right;
+	padding-left: 20px;
+	font-weight: 700;
+	background: url(../img/shopping-icon.png) no-repeat 0px -304px;
+}
+
+/*结算的详细信息*/
+.moneyInfoBox{
+	width:890px;
+	height:20px;
+	margin-top:5px;
+	position: relative;
+}
+.moneyInfo{
+	position: absolute;
+	top:0;
+	right:0;
+	width:442px;
+	height:20px;
+	float: right;
+}
+.moneyInfo span{
+	display: inline-block;
+}
+.moneyInfo p,.moneyInfo .oprateNum{
+	float: left;
+	font-size: 14px;
+	height:20px;
+	line-height: 20px;
+}
+.moneyInfo .oprateNum{
+	margin:0px 5px;
+}
+.moneyInfo span{
+	font-size: 14px;
+	height:20px;
+	line-height: 20px;	
+}
+.moneyInfo p{
+	color: #666;
+}
+.moneyInfo span.moneyNum{
+	color: #E50048;
+	padding-left: 10px;
+	background: url(../img/shop5.png) no-repeat;
+}
